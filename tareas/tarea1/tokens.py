@@ -1,3 +1,4 @@
+# Christian Gael Lara Martinez Tarea1, 260225
 def get_etiqueta(t):
     operadores = '+-*/='
     minusculas = 'abcdefghijklmnopqrstuvwxyz_'
