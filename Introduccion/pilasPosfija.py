@@ -13,7 +13,7 @@ def evalua(posfija):
             elif e == '-':
                 pila.append(int(op1) - int(op2))
         else:
-            pila.append(int(e))  
+            pila.append(int(e))
 
     return pila[-1]
 
