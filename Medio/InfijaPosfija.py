@@ -32,7 +32,7 @@ def infija_a_posfija(expresion):
     return salida
 
 # Ejemplo de uso
-expresion_infija = ['3', '+', '5', '*', '(', '2', '-', '8', ')']
+expresion_infija = ['(', 'a', '+', '(', 'b', '*', 'c', ')', '/', 'd', ')', '/', 'e']
 expresion_posfija = infija_a_posfija(expresion_infija)
 print("Expresión infija:", expresion_infija)
 print("Expresión posfija:", expresion_posfija)
