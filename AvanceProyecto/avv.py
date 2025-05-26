@@ -100,12 +100,12 @@ def separa_tokens(linea):
         c = linea[i]
         if dentro_cadena:
             token += c
-            if c == '"':
+            if c in ['"', '“', '”']:  # Reconocer comillas rectas y tipográficas
                 tokens.append(token)
                 token = ""
                 dentro_cadena = False
         else:
-            if c == '"':
+            if c in ['"', '“', '”']:  # Inicio de cadena con cualquier tipo de comilla
                 if token:
                     tokens.append(token)
                     token = ""
